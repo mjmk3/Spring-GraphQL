@@ -9,5 +9,5 @@ package app.graphql.springgraphql.Enums;
  */
 
 public enum Country {
-    GER, ENG, ES, JAP, IQ
+    GER, ENG, ES, JAP, IRQ
 }
