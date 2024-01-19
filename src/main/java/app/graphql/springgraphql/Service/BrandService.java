@@ -1,12 +1,9 @@
 package app.graphql.springgraphql.Service;
 
-import app.graphql.springgraphql.DTO.BrandDTO;
-import app.graphql.springgraphql.DTO.ModelDTO;
-import app.graphql.springgraphql.Domain.Brand;
-import app.graphql.springgraphql.Domain.Model;
+import app.graphql.springgraphql.DTO.*;
+import app.graphql.springgraphql.Domain.*;
 import app.graphql.springgraphql.Enums.Country;
-import app.graphql.springgraphql.Repo.BrandRepo;
-import app.graphql.springgraphql.Repo.ModelRepo;
+import app.graphql.springgraphql.Repo.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

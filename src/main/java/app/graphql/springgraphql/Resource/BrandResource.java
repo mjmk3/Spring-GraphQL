@@ -1,9 +1,7 @@
 package app.graphql.springgraphql.Resource;
 
-import app.graphql.springgraphql.DTO.BrandDTO;
-import app.graphql.springgraphql.DTO.ModelDTO;
-import app.graphql.springgraphql.Domain.Brand;
-import app.graphql.springgraphql.Domain.Model;
+import app.graphql.springgraphql.DTO.*;
+import app.graphql.springgraphql.Domain.*;
 import app.graphql.springgraphql.Service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.*;
@@ -72,8 +70,8 @@ public class BrandResource {
     }
 
     @MutationMapping
-    public Model updateModel(@Argument int id, @Argument String name){
-        return brandService.updateModel(id, name);
+    public Model updateModel(@Argument int id, @Argument String modelName){
+        return brandService.updateModel(id, modelName);
     }
 
     @MutationMapping
