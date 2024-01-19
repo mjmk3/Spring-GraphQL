@@ -24,7 +24,7 @@ public class Model implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int modelName;
+    private String modelName;
 
     @ManyToOne(cascade = CascadeType.ALL)
     private Brand brand;
