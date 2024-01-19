@@ -1,2 +1,13 @@
-{
-    }
+spring:
+    datasource:
+      url: jdbc:h2:mem:testdb
+      username: user
+      password: user
+    h2:
+      console:
+          enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+    graphql:
+        graphiql:
+            enabled: true
